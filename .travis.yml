@@ -10,9 +10,13 @@ matrix:
     - os: linux
       python: "2.7"
       env: PYTHON=/usr/bin/python2.7
+  env:
+    - DJANGO=django-1.10
+    - DJANGO=django-1.9
+    - DJANGO=django-1.8
 
 install:
-  - pip install django
+  - pip install $DJANGO
 script:
   - python setup.py test
 notifications:
