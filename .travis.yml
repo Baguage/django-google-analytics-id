@@ -3,7 +3,6 @@ env:
   global:
     - SECRET_KEY=travis
 matrix:
-  include:
     python:
       - "2.7"
       - "3.4"
