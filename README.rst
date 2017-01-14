@@ -32,3 +32,10 @@ GOOGLE_ANALYTICS_CODES = {"portal": "UA-123-1", "admin": "UA-123-2"}
 DISABLE_GOOGLE_ANALYTICS, bool
 If true, {% google_analytics %} will return empty string. Can be used to enable google analytics in development
 and/or qa environments
+
+Bugs and requests
+=================
+
+If you have found a bug or if you have a request for additional functionality, please use the issue tracker on GitHub.
+
+https://github.com/Baguage/django-google-analytics/issues
