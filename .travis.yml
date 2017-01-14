@@ -10,6 +10,9 @@ matrix:
     - os: linux
       python: "2.7"
       env: PYTHON=/usr/bin/python2.7
+
+install:
+  - pip install django
 script:
   - python setup.py test
 notifications:
