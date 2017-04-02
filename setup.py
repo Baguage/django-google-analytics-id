@@ -16,7 +16,7 @@ setup(
     license='BSD License',
     description='Django application to add your Google analytics code to your website template(s)',
     long_description=README,
-    url='https://www.example.com/',
+    url='https://github.com/Baguage/django-google-analytics-id',
     author='Alex Vyushkov',
     author_email='alex.vyushkov@gmail.com',
     classifiers=[

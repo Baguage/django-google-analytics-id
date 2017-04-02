@@ -37,4 +37,4 @@ Bugs and requests
 
 If you have found a bug or if you have a request for additional functionality, please use the issue tracker on GitHub.
 
-https://github.com/Baguage/django-google-analytics/issues
+https://github.com/Baguage/django-google-analytics-id/issues
