@@ -10,6 +10,7 @@ cd /tmp
 git clone https://github.com/Baguage/django-google-analytics-id
 mkvirtualenv analytics
 cd django-google-analytics-id
+pip install django==1.10
 python setup.py test
 python setup.py install
 deactivate
