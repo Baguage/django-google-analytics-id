@@ -1,0 +1,10 @@
+django-google-analytics-id
+https://github.com/Baguage/django-google-analytics-id
+
+Copyright 2017 Alex Vyushkov
+
+Contributors:
+  Alex Vyushkov
+  Jonathan Barratt
+
+# Licensed under the MIT license

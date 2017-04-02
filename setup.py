@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-google-analytics-id',
-    version='0.9.0',
+    version='0.9.1',
     packages=find_packages(),
     test_suite="runtests.runtests",
     include_package_data=True,
