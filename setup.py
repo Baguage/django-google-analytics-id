@@ -9,7 +9,7 @@ os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
 setup(
     name='django-google-analytics-id',
-    version='0.9.1',
+    version='0.9.2b',
     packages=find_packages(),
     test_suite="runtests.runtests",
     include_package_data=True,
@@ -29,7 +29,6 @@ setup(
         'License :: OSI Approved :: BSD License',  # example license
         'Operating System :: OS Independent',
         'Programming Language :: Python',
-        # Replace these appropriately if you are stuck on Python 2.
         'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3',
         'Programming Language :: Python :: 3.4',
