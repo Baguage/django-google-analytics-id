@@ -6,6 +6,21 @@ from analytics.templatetags.analytics_tags import google_analytics
 
 
 class GoogleAnalyticsTest(TestCase):
+    @override_settings(GOOGLE_ANALYTICS_ID="UA-123-2")
+    def test_default_id(self):
+        # No DISABLE_GOOGLE_ANALYTICS option defined
+        self.assertFalse(hasattr(settings, "DISABLE_GOOGLE_ANALYTICS"))
+        code = google_analytics()
+        # Make sure the code is not autoescaped
+        self.assertIn("<script>", code)
+        self.assertIn("UA-123-2", code)
+
+    def test_no_default_id(self):
+        # No DISABLE_GOOGLE_ANALYTICS option defined
+        self.assertFalse(hasattr(settings, "DISABLE_GOOGLE_ANALYTICS"))
+        # AttributeError: 'Settings' object has no attribute 'GOOGLE_ANALYTICS_ID'
+        self.assertRaises(AttributeError, google_analytics)
+
     def test_google_analytics_id(self):
         # No DISABLE_GOOGLE_ANALYTICS option defined
         self.assertFalse(hasattr(settings, "DISABLE_GOOGLE_ANALYTICS"))
