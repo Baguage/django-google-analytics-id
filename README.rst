@@ -26,6 +26,8 @@ You can also pass the name of an option from setting.
 GOOGLE_ANALYTICS_ID = 'UA-123-1'
 {% google_analytics 'GOOGLE_ANALYTICS_ID' %}
 
+if no parameter is provided, settings.GOOGLE_ANALYTICS_ID as default value
+
 Options
 =======
 DISABLE_GOOGLE_ANALYTICS, bool
