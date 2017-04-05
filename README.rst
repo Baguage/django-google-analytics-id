@@ -1,8 +1,8 @@
-Google analytics for django
+Google analytics for Django
 ===========================
 
 This an installable django application to add your Google analytics code to your website template(s).
-It is compatible with Django 1.8, 1.9 and 1.10.
+It is compatible with Django 1.8, 1.9, 1.10 and 1.11.
 
 Python 2.7 and python 3.5 are supported.
 
