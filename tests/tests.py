@@ -2,7 +2,7 @@ from django.conf import settings
 from django.template import Template, Context
 from django.test.testcases import TestCase
 from django.test.utils import override_settings
-from django.urls.base import reverse
+from django.core.urlresolvers import reverse
 
 from analytics.templatetags.analytics_tags import google_analytics
 
