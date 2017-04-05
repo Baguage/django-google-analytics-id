@@ -11,6 +11,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'analytics',
+    'tests'
 ]
 
 ROOT_URLCONF = 'tests.urls'

@@ -2,6 +2,7 @@ from django.conf import settings
 from django.template import Template, Context
 from django.test.testcases import TestCase
 from django.test.utils import override_settings
+from django.urls.base import reverse
 
 from analytics.templatetags.analytics_tags import google_analytics
 
@@ -103,3 +104,9 @@ class GoogleAnalyticsTest(TestCase):
         t = Template("{% load analytics_tags %}{% google_analytics \"CODE\" %}")
         code = t.render(Context())
         self.assertEqual(code, "")
+
+    def test_get_index_view(self):
+        response = self.client.get(reverse("index"))
+        self.assertEqual(response.status_code, 200)
+        # For python 3, convert bytestring to str
+        self.assertIn('UA-123-2', str(response.content))
